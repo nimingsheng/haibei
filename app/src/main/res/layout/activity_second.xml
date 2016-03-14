@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RadioGroup
+        android:id="@+id/radiogroup_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/home"
+            android:background="@drawable/rb_bg_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发现"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/discover"
+            android:background="@drawable/rb_bg_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分类"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/category"
+            android:background="@drawable/rb_bg_selector"
+            />
+
+    </RadioGroup>
+    <GridLayout
+        android:id="@+id/gl_base"
+        android:layout_above="@id/radiogroup_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

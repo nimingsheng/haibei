@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/ll_title_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_search_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海呗"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_title_home"
+            app:srl_direction="both">
+            <com.nms.mydemo.seashell.layout.GridViewWithHeaderAndFooter
+                android:id="@+id/gv_show_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="6dp"
+                android:verticalSpacing="6dp"
+                android:numColumns="2"
+                >
+
+            </com.nms.mydemo.seashell.layout.GridViewWithHeaderAndFooter>
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+
+    </RelativeLayout>
+
